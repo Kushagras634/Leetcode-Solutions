@@ -1,0 +1,9 @@
+# Zigzag Configuration
+|    |
+|  /|
+|/  |
+|    |
+​
+​
+*  counter required
+*
