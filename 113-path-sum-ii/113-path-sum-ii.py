@@ -1,0 +1,11 @@
+class Solution:
+    def pathSum(self, R: TreeNode, S: int) -> List[List[int]]:
+        A, P = [], []
+        def dfs(N):
+            if N == None: return
+            P.append(N.val)
+            if (N.left,N.right) == (None,None) and sum(P) == S: A.append(list(P))
+            else: dfs(N.left), dfs(N.right)
+            P.pop()
+        dfs(R)
+        return A
